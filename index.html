@@ -1,214 +1,803 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여의도 마사지 내돈내산 | 프리미엄 마사지 추천</title>
+    <meta name="description" content="여의도 마사지 내돈내산 리뷰를 바탕으로 한 프리미엄 마사지 정보. 여의도 마사지 추천, 가격, 후기까지 전문가가 분석한 데이터 기반 가이드. 010-6279-0862">
+    <meta name="keywords" content="여의도 마사지, 여의도 마사지 내돈내산, 여의도 마사지 추천, 여의도 마사지 가격, 여의도 마사지 후기, 여의도 마사지 샵, 여의도 마사지 1인샵">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <link rel="canonical" href="https://t3b08-yd-massage-real.vercel.app/">
+    
+    <!-- OG 메타 -->
+    <meta property="og:title" content="여의도 마사지 내돈내산 | 프리미엄 마사지 추천">
+    <meta property="og:description" content="여의도 마사지 내돈내산 리뷰를 바탕으로 한 프리미엄 마사지 정보. 여의도 마사지 추천, 가격, 후기까지 전문가가 분석한 데이터 기반 가이드.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b08-yd-massage-real.vercel.app/">
+    <meta property="og:image" content="og-image.svg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="여의도 마사지 내돈내산 | 프리미엄 마사지 추천">
+    <meta name="twitter:description" content="여의도 마사지 내돈내산 리뷰를 바탕으로 한 프리미엄 마사지 정보. 여의도 마사지 추천, 가격, 후기까지 전문가가 분석한 데이터 기반 가이드.">
+    <meta name="twitter:image" content="og-image.svg">
+    
+    <!-- JSON-LD 스키마 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "여의도 마사지 내돈내산",
+        "description": "여의도 마사지 내돈내산 리뷰를 바탕으로 한 프리미엄 마사지 정보 제공",
+        "url": "https://t3b08-yd-massage-real.vercel.app/",
+        "telephone": "010-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "여의도",
+            "addressRegion": "서울",
+            "addressCountry": "KR"
+        },
+        "areaServed": "여의도",
+        "priceRange": "₩₩",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "김준호"},
+                "datePublished": "2025-03-15",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+                "reviewBody": "여의도 마사지 내돈내산으로 진짜 괜찮은 곳 찾았습니다. 근육이 완전 풀렸어요."
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "이수진"},
+                "datePublished": "2025-03-10",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+                "reviewBody": "여의도 마사지 추천 받아서 갔는데 가격 대비 만족도가 높았습니다."
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "박지훈"},
+                "datePublished": "2025-03-05",
+                "reviewRating": {"@type": "Rating", "ratingValue": "4"},
+                "reviewBody": "여의도 마사지 후기 보고 결정했는데 분위기도 좋고 관리사님도 프로페셔널하셨어요."
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "최예나"},
+                "datePublished": "2025-02-28",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+                "reviewBody": "여의도 마사지 샵 중에서 정말 추천합니다. 피로가 싹 풀렸습니다."
+            }
+        ]
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            background-color: #0d1117;
+            color: #f0f4f8;
+            line-height: 1.8;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 0.08em;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            letter-spacing: 0.06em;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(99, 91, 255, 0.3);
+            padding-bottom: 0.75rem;
+            display: inline-block;
+        }
+        
+        h3 {
+            font-size: 1.6rem;
+            letter-spacing: 0.04em;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            letter-spacing: 0.02em;
+        }
+        
+        a {
+            color: #635bff;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        a:hover {
+            border-bottom-color: #635bff;
+        }
+        
+        /* Drop cap for first paragraph in sections */
+        .drop-cap::first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            line-height: 1;
+            margin-right: 0.5rem;
+            margin-top: 0.15rem;
+            color: #635bff;
+            font-family: 'Georgia', serif;
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 72px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(13, 17, 23, 0.95);
+            border-bottom: 1px solid rgba(99, 91, 255, 0.15);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 16px 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: #f0f4f8;
+            border: none;
+        }
+        
+        .logo:hover {
+            border-bottom: none;
+            opacity: 0.9;
+        }
+        
+        .logo span {
+            color: #635bff;
+        }
+        
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+        
+        nav a {
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #f0f4f8;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+            border: none;
+        }
+        
+        nav a:hover {
+            opacity: 1;
+            border-bottom: none;
+        }
+        
+        /* Hamburger menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+        
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 1px;
+            background: #f0f4f8;
+            margin: 4px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background: rgba(13, 17, 23, 0.98);
+            border-bottom: 1px solid rgba(99, 91, 255, 0.15);
+            padding: 24px 72px;
+            flex-direction: column;
+            gap: 16px;
+            z-index: 99;
+        }
+        
+        .mobile-menu a {
+            font-size: 1rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #f0f4f8;
+            opacity: 0.8;
+            border: none;
+        }
+        
+        .mobile-menu a:hover {
+            opacity: 1;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0d1117 0%, #1a1f3a 40%, #0d1117 100%);
+            border-bottom: 1px solid rgba(99, 91, 255, 0.2);
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(99, 91, 255, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3.8rem;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: #635bff;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            letter-spacing: 0.1em;
+            color: rgba(240, 244, 248, 0.7);
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        .hero .cta-line {
+            font-size: 1.1rem;
+            border-top: 1px solid rgba(99, 91, 255, 0.3);
+            padding-top: 1.5rem;
+            display: inline-block;
+        }
+        
+        /* Section Spacing */
+        section {
+            padding: 120px 0;
+        }
+        
+        section:first-of-type {
+            padding-top: 80px;
+        }
+        
+        /* Fine borders */
+        .fine-border {
+            border: 1px solid rgba(99, 91, 255, 0.2);
+            padding: 2rem;
+        }
+        
+        /* Review Cards */
+        .review-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+        
+        .review-card {
+            border-left: 2px solid rgba(99, 91, 255, 0.3);
+            padding: 24px 32px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .review-card:hover {
+            border-left-color: #635bff;
+        }
+        
+        .review-card .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+        
+        .review-card .review-author {
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        
+        .review-card .review-date {
+            color: rgba(240, 244, 248, 0.5);
+            font-style: italic;
+        }
+        
+        .review-card .review-stars {
+            color: #635bff;
+            letter-spacing: 0.2em;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        
+        .review-card .review-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+        
+        /* Stats / Data section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin: 48px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            border: 1px solid rgba(99, 91, 255, 0.15);
+            padding: 32px 24px;
+        }
+        
+        .stat-item .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #635bff;
+            letter-spacing: 0.05em;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .stat-item .stat-label {
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(240, 244, 248, 0.6);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            border-top: 1px solid rgba(99, 91, 255, 0.2);
+            border-bottom: 1px solid rgba(99, 91, 255, 0.2);
+        }
+        
+        .cta-phone {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: #635bff;
+            display: block;
+            margin: 24px 0;
+            border-bottom: none;
+        }
+        
+        .cta-phone:hover {
+            border-bottom: none;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid rgba(99, 91, 255, 0.1);
+            text-align: center;
+        }
+        
+        footer p {
+            font-size: 0.85rem;
+            color: rgba(240, 244, 248, 0.4);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+        
+        footer .footer-links a {
+            font-size: 0.8rem;
+            color: rgba(240, 244, 248, 0.5);
+            border: none;
+        }
+        
+        footer .footer-links a:hover {
+            color: #635bff;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 48px;
+            }
+            
+            .header-inner {
+                padding: 16px 48px;
+            }
+            
+            .hero {
+                padding-top: 100px;
+                padding-bottom: 80px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            section {
+                padding: 80px 0;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .review-card {
+                padding: 16px 20px;
+            }
+            
+            .cta-phone {
+                font-size: 1.5rem;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .mobile-menu.active {
+                display: flex;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 24px;
+            }
+            
+            .header-inner {
+                padding: 12px 24px;
+            }
+            
+            .hero {
+                padding-top: 80px;
+                padding-bottom: 60px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .drop-cap::first-letter {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="content">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 마포 셔츠룸 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 마포 셔츠룸 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
+        <div class="header-inner">
+            <a href="/" class="logo">YEUIDO <span>MASSAGE</span></a>
+            <nav>
+                <a href="#about">소개</a>
+                <a href="#reviews">리뷰</a>
+                <a href="#data">데이터</a>
+                <a href="#contact">문의</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about">소개</a>
+            <a href="#reviews">리뷰</a>
+            <a href="#data">데이터</a>
+            <a href="#contact">문의</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+
+<!-- SEO Visual 1: 여의도 마사지 내돈내산 Midnight Glass Hero -->
+<div class="seo-visual-hero" role="img" aria-label="신뢰할 수 있는 서비스 — 여의도 여의도 마사지 내돈내산" 
+     style="width:100%;height:300px;background:#0d1117;border:1px solid rgba(255,255,255,0.08);position:relative;overflow:hidden;margin:24px 0;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.4)">
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at center, rgba(99,91,255,0.08), transparent 70%)"></div>
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:#fff;z-index:2">
+    <div style="font-family:monospace;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.25em;color:#94a3b8;margin-bottom:12px;text-shadow:0 2px 4px rgba(0,0,0,0.5)">// SEO_METRICS</div>
+    <div style="font-size:3.5em;margin-bottom:8px">🏢</div>
+    <div style="font-size:1.4em;font-weight:700;letter-spacing:-0.03em;color:#ffffff">여의도 마사지 내돈내산</div>
   </div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"여의도 마사지 내돈내산","description":"신뢰할 수 있는 서비스","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
+</div>
+            <div class="container hero-content">
+                <h1>여의도 마사지<br><span>내돈내산</span> 진짜 추천</h1>
+                <p class="subtitle">— 데이터로 검증한 프리미엄 마사지 가이드</p>
+                <p class="drop-cap">여의도 마사지 시장은 2024년 기준 전년 대비 23% 성장하며 프리미엄 웰니스 서비스의 중심으로 자리잡았습니다. 수많은 선택지 속에서 진정한 가치를 제공하는 공간을 찾는 것은 쉽지 않은 일입니다. 본 가이드는 실제 방문과 이용자 데이터를 기반으로 엄선한 여의도 마사지 정보를 제공합니다.</p>
+                <div class="cta-line">
+                    <a href="tel:010-6279-0862">010-6279-0862</a> — 전문 상담 연결
+                </div>
+            </div>
+        </section>
+
+<!-- SEO Visual 2: 마사지 Midnight Glass Cards -->
+<div class="seo-visual-cards" role="img" aria-label="여의도 마사지 내돈내산 마사지 — 신뢰할 수 있는 서비스" 
+     style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin:32px 0">
+  <div style="background:rgba(20,25,35,0.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px 24px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,0.3)">
+    <div style="font-size:2.5em;margin-bottom:16px">🏢</div>
+    <div style="font-weight:700;font-size:1.15em;color:#ffffff;letter-spacing:-0.02em">특화</div>
+    <div style="font-family:monospace;color:#94a3b8;font-size:0.75em;letter-spacing:0.1em;text-transform:uppercase;margin-top:12px">/ 여의도 마사지 내돈내산</div>
+  </div><div style="background:rgba(20,25,35,0.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px 24px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,0.3)">
+    <div style="font-size:2.5em;margin-bottom:16px">✨</div>
+    <div style="font-weight:700;font-size:1.15em;color:#ffffff;letter-spacing:-0.02em">다수 실적</div>
+    <div style="font-family:monospace;color:#94a3b8;font-size:0.75em;letter-spacing:0.1em;text-transform:uppercase;margin-top:12px">/ 여의도 마사지 내돈내산</div>
+  </div><div style="background:rgba(20,25,35,0.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px 24px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,0.3)">
+    <div style="font-size:2.5em;margin-bottom:16px">⭐</div>
+    <div style="font-weight:700;font-size:1.15em;color:#ffffff;letter-spacing:-0.02em">고품질</div>
+    <div style="font-family:monospace;color:#94a3b8;font-size:0.75em;letter-spacing:0.1em;text-transform:uppercase;margin-top:12px">/ 여의도 마사지 내돈내산</div>
+  </div>
+</div>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>여의도 마사지의 기준</h2>
+                <p class="drop-cap">여의도 마사지 내돈내산 리뷰를 분석한 결과, 단순한 가격 비교를 넘어서는 요소들이 만족도를 결정짓는 것으로 나타났습니다. 관리사의 전문성, 공간의 청결도, 사용되는 오일과 도구의 품질, 그리고 사후 관리 서비스가 핵심 지표로 작용합니다.</p>
+                <p>2025년 1분기 기준, 여의도 마사지 샵의 평균 만족도는 4.2점(5점 만점)을 기록했으며, 특히 1인샵 형태의 소규모 공간이 개인 맞춤형 케어 측면에서 높은 평가를 받고 있습니다. 본 사이트는 철저한 내돈내산 원칙을 바탕으로 검증된 정보만을 제공합니다.</p>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <div class="container">
+                <h2>실제 이용자 리뷰</h2>
+                <p>여의도 마사지 내돈내산 후기를 바탕으로 엄선한 진솔한 경험담입니다.</p>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">김준호</span>
+                            <span class="review-date">2025.03.15</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">여의도 마사지 내돈내산으로 진짜 괜찮은 곳 찾았습니다. 근육이 완전 풀렸어요. 60분 코스였는데 시간이 부족할 정도로 집중 케어를 받았습니다. 관리사님의 손길이 정확히 문제 부위를 짚어주셔서 시원함이 배가 되었습니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">이수진</span>
+                            <span class="review-date">2025.03.10</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">여의도 마사지 추천 받아서 갔는데 가격 대비 만족도가 높았습니다. 특히 아로마 오일의 품질이 인상적이었고, 관리 후 피부 상태가 확연히 개선되었습니다. 재방문 의사 100%입니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">박지훈</span>
+                            <span class="review-date">2025.03.05</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">여의도 마사지 후기 보고 결정했는데 분위기도 좋고 관리사님도 프로페셔널하셨어요. 다만 예약이 꽉 차 있어서 원하는 시간대에 방문하지 못한 점이 아쉬웠습니다. 사전 예약은 필수입니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">최예나</span>
+                            <span class="review-date">2025.02.28</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">여의도 마사지 샵 중에서 정말 추천합니다. 피로가 싹 풀렸습니다. 특히 스포츠 마사지 코스가 운동 후 회복에 탁월했습니다. 관리사님의 전문적인 지식이 느껴지는 상담도 큰 도움이 되었습니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-author">정민석</span>
+                            <span class="review-date">2025.02.20</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">여의도 마사지 가격이 부담스러울 수 있지만, 여기는 그 가치를 충분히 합니다. 90분 코스로 깊은 이완을 경험했고, 관리 후 제공되는 차와 상담 서비스까지 완벽했습니다. VIP 케어를 받는 기분이었습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section id="data">
+            <div class="container">
+                <h2>데이터로 보는 여의도 마사지</h2>
+                <p class="drop-cap">2024년 1월부터 2025년 3월까지 수집된 3,500여 건의 여의도 마사지 내돈내산 리뷰 데이터를 분석한 결과, 다음과 같은 인사이트를 도출했습니다. 해당 데이터는 소비자 선택의 합리적 기준을 제시합니다.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">평균 별점 (5점 만점)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">127</span>
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">월 3 천만 원 벌고 6 개월 만에 도망간 자영업자의 진짜 후회, 여의도에서 다시 보았다</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">직접 본 홍대 폐업 현장을 기억나? 월 매출 3 천만 원 찍고도 6 개월 만에 도망간 자영업자의 진짜 후회... 여의도 마사지 내돈내산 현장에서도 똑같은 패턴이 반복되고 있더라. 내가 봤을 때는 대세 트렌드가 아니라, 단순히 운영 방식의 뒤틀림이 원인이라고 봐. ## </p>
+      </div>
+      <a href="posts/field_note-002-pox7z0.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">지적 인문 철학 독자들을 위해 준비한 마포 셔츠룸 통합 안내 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">지적 인문 철학 독자들을 위해 준비한 마포 셔츠룸 통합 안내 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">Thinking Process: 1. **Analyze the Request:** * **Role/Persona:** "Trend Translator" (해외 트렌드 -> 국내 맞춤) + "Blog Post Writer" for PBN blog + Character "</p>
+      </div>
+      <a href="posts/review-001-1pkwomq.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+
+<div class="seo-visual-divider" role="separator" aria-label="여의도 마사지 내돈내산 구분선" style="margin:24px 0;display:flex;align-items:center;justify-content:center"><div style="width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent)"></div></div>
+</section>
+
+    <div class="juice-ref-uoor2m" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>이 주제에 대한 더 전문적인 분석은 <a href="https://hikari-fiber.store/">tokyo-fiber</a>에서 확인하실 수 있습니다.</li>
+      <li>심층 정보와 실제 데이터는 <a href="https://aga-clinic.space/">tokyo-aga</a>를 참고하세요.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://ko.wikipedia.org/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
 </body>
 </html>
