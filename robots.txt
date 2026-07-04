@@ -7,10 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Yeti
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-Sitemap: https://t3b08-yd-massage-real.pages.dev/sitemap.xml
+Sitemap: https://yeouido-body-trend.program-school.online/sitemap.xml
